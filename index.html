@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home - Jason Jonathan Geraldo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, #001f3f, #0077ff, #00d4ff, #001f3f);
+    background-size: 800% 800%;
+    animation: gradientBG 20s ease infinite;
+    color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  @keyframes gradientBG {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+  }
+  .container {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 25px;
+    padding: 50px 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 0 40px #00ffffaa;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 15px #00ffffcc;
+    margin-bottom: 15px;
+  }
+  p.tagline {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #00ffffbb;
+  }
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #00ffffaa;
+    box-shadow:
+      0 0 20px #00ffffcc,
+      0 0 40px #00ffffaa;
+    object-fit: cover;
+    margin: 0 auto 40px;
+    transition: transform 0.4s ease;
+  }
+  .profile-img:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #00ffffcc;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px transparent;
+  }
+  nav a:hover {
+    color: #000;
+    background: #00ffffcc;
+    border-color: #00ffffcc;
+    box-shadow: 0 0 25px #00ffffcc;
+    transform: scale(1.1);
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+    p.tagline {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    nav {
+      gap: 30px;
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 30px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Selamat Dateng</h1>
+    <h2>Pada hari ini kita akan melihat biografi saya dan karakter favorite saya</h2>
+    <img src="foto-saya.jpg" alt="Foto Jason Jonathan Geraldo" class="profile-img" />
+    <nav>
+      <a href="profil.html">Profil Saya</a>
+      <a href="karakter.html">Karakter Favorit</a>
+    </nav>
+  </div>
+</body>
+</html>
